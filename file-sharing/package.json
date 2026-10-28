@@ -12,7 +12,7 @@
     "test": "vitest run",
     "build-only": "vite build",
     "type-check": "vue-tsc --skipLibCheck",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "oxlint src/",
     "format": "prettier --write src/"
   },
   "dependencies": {
@@ -24,37 +24,37 @@
     "monet": "^0.9.3",
     "neverthrow": "^6.2.1",
     "p-limit": "^7.2.0",
+    "uuid": "^9.0.1",
     "vue": "^3.5",
     "vue-router": "^4.3.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@fontsource/red-hat-text": "^5.0.18",
-    "@rushstack/eslint-patch": "^1.10.2",
     "@tailwindcss/forms": "^0.5.7",
     "@tsconfig/node20": "^20.1.4",
     "@types/deep-equal": "^1.0.4",
     "@types/jsdom": "^21.1.6",
-    "@types/node": "^20.12.12",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/eslint-config-prettier": "^9.0.0",
-    "@vue/eslint-config-typescript": "^14.3.0",
+    "@types/node": "26.6.5",
+    "@vitejs/plugin-vue": "6.0.10",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.5.1",
     "autoprefixer": "^10.4.19",
     "deep-equal": "^2.2.3",
-    "eslint": "^9.19.0",
-    "eslint-plugin-vue": "^9.32.0",
     "jsdom": "^24.0.0",
     "npm-run-all2": "^6.1.2",
     "postcss": "^8.4.38",
     "postcss-modules": "^6.0.0",
     "tailwindcss": "^3.4.3",
     "ts-node": "^10.9.2",
-    "typescript": "~5.4.5",
-    "vite": "6",
-    "vite-plugin-vue-devtools": "^7.2.0",
-    "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.19"
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "vite-plugin-vue-devtools": "8.2.1",
+    "vitest": "5.0.5",
+    "vue-tsc": "3.3.13",
+    "oxlint": "1.90.0"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
